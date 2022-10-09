@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="assets/css/main.css">
+        <style>
+            .img1 {
+               width: 10%;
+               position: absolute;
+               top:28px;
+            }
+            .a-9 {
+                z-index: 9;
+            }
+            .txt-btn {
+                color: rgb(80, 180, 146);
+                background-color: white;
+                font-size: 15px;
+                margin-left: 180px;
+                font-weight: bold;
+                padding: 10px 30px;
+                border-radius: 5px;
+                letter-spacing: 0.5px;
+                border: 1px solid rgb(209, 209, 209);
+            }
+            .ul-menu {
+                margin-left: 180px;
+            }
+            .txt-btn:hover {
+                color: rgb(80, 180, 146);
+            }
+            .icon1 {
+                font-size: 15px;
+            }
+            .navbar-white {
+                background-color: white !important;
+                z-index: 8;
+                border-bottom: 1px solid rgb(233, 233, 233);
+                box-shadow: 0 0 0 0.25px rgb(234, 234, 234);
+            }
+            .li-clr {
+                transition: 0.25s;
+            }
+            .li-clr:hover {
+                color: rgb(80, 180, 146);
+            }
+            .btn-1 {
+                background-color: rgb(80, 180, 146);
+                color: white;
+                border: none;
+                border-radius: 5px;
+                padding: 7px 15px;
+                transition: 0.3s;
+            }
+            .btn-1:hover {
+                background-color: rgb(63, 148, 119);
+            }
+            .bg-green {
+                background-color:  rgb(80, 180, 146);
+                border: none;
+            }
+            .bg-green:hover {
+                background-color: rgb(63, 148, 119);
+            }
+            .img2 {
+                margin-top: 35px;
+                width: 33%;
+            }
+            .input {
+                width: 90%;
+                border-radius: 5px;
+                padding: 10px 20px;
+                border: 1px solid rgb(111, 111, 111);
+                transition: 0.3s;
+            }
+            .input:hover {
+                border-color:  rgb(63, 148, 119);
+            }
+            .forgot-a {
+                margin-right: 2rem;
+                font-size: 13px;
+                text-decoration: none;
+                color:  rgb(63, 148, 119);
+                transition: 0.3s;
+            }
+            .forgot-a:hover {
+                color:  rgb(50, 119, 96);
+            }
+            .text-position {
+                left: 85%;
+                right: 0;
+                top: 76%;
+                bottom: 0;
+            }
+            .btn-2 {
+                width: 90%;
+                background-color: rgb(80, 180, 146);
+                color: white;
+                border: none;
+                border-radius: 5px;
+                padding: 8px 16px;
+                transition: 0.3s;
+            }
+           .line1 {
+            width: 90%;
+           }
+            .span-or {
+                width: 5%;
+               background-color: white;
+                left: 46.5%;
+                right: 0;
+                top: 58.5%;
+                bottom: 0;
+                padding: 4px;
+                height: 20px;
+               
+            } 
+            .nav-link:hover {
+                color: rgb(70, 163, 132);
+            }
+            .btn-3 {
+                width: 90%;
+                background-color: rgb(63, 101, 225);
+                color: white;
+                border: none;
+                border-radius: 5px;
+                padding: 8px 16px;
+                transition: 0.3s;
+            }
+            .btn-3:hover {
+                background-color: rgb(40, 82, 220);
+            }
+            .btn-4 {
+                width: 90%;
+                background-color: rgb(148, 148, 148);
+                color: white;
+                border: none;
+                border-radius: 5px;
+                padding: 8px 16px;
+                transition: 0.3s;
+            }
+            .btn-4:hover {
+                background-color: rgb(111, 111, 111);
+            }
+            .text-a {
+                color: rgb(80, 180, 146);
+            }
+            .text-a:hover {
+                text-decoration: none;
+                color: rgb(63, 137, 112);
+            }
+            .header {
+                background-image: url(/images/grocery.webp);
+                height: 100vh;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            .inputgroup2 {
+                width: 45%;
+                margin-left: 26rem;
+                margin-top: 2.5rem;
+            }
+            .input2 {
+                padding: 15px 30px;
+            }
+            .text-clr {
+                background-color: rgb(80, 180, 146);
+                color: white;
+                padding: 15px 35px;
+                transition: 0.3s;
+                z-index: 0;
+            }
+            .text-clr:hover {
+                background-color: rgb(57, 130, 106);
+            }
+            .h1-1 {
+                padding-top: 15rem;
+                font-size: 48px;
+                font-weight: bold;
+            }
+            .p-1 {
+                font-size: 20px;
+                color: rgb(60, 60, 60);
+            }
+            .fruit-vegetables {
+                background-color: rgb(241, 241, 241);
+            }
+            .sidebar {
+                background-color: white;
+                border-top: 1px solid rgb(186, 186, 186);
+            }
+            .text-gray {
+                color: rgb(185, 185, 185);
+                font-weight: normal;
+            }
+            .bg-gray {
+                background-color: rgb(193, 193, 193);
+                color: rgb(90, 90, 90);
+                border: none;
+                transition: 0.3s;
+            }
+            .bg-gray:hover {
+                background-color:rgb(57, 130, 106);
+                color: rgb(255, 255, 255);
+                border: none;
+            }
+            .sale {
+                background-color:rgb(91, 158, 136);
+                color: white;
+                position: absolute;
+                text-align: center;
+                font-size: 13px;
+                width: 17%;
+                left: 14rem;
+                top:1rem;
+                border-radius: 5px;
+                font-weight: 500;
+            }
+            .border .border-img {
+                border-radius: 15px;
+            }
+            .btn-plus {
+                position: absolute;
+                left: 15.4rem;
+                bottom: 1rem;
+                font-size: 12px;
+                padding: 8.7px;
+                border-bottom-right-radius: 5px;
+                border-top-right-radius: 5px;
+            }
+    
+            .div-hover {
+                bottom:0;
+                transition: 0.4s;
+            }
+            .div-hover:hover {
+                bottom:1%;
+            }
+            .li-text-clr {
+                color: rgb(111, 111, 111);
+                font-weight: 500;
+                font-size: 14px;
+            }
+            .shopping {
+                margin-bottom: 45px;
+                bottom: 280px;
+                border-top-left-radius: 6px;
+                border-bottom-left-radius: 6px;
+                background-color: rgb(63, 169, 134);
+                height: 85px;
+                font-size: 15px;
+                padding-top: 5px;
+                position: fixed;
+                line-height: 35px;
+                right: 0.5px;
+                text-align: center;
+                z-index: 9;
+                width: 90px;
+                transition: 0.3s;
+                cursor: pointer;
+            }
+            .shopping:hover {
+                background-color: rgb(52, 137, 109);
+            }
+            .greenshop {
+                text-decoration: none;
+                color: white;
+                font-weight: 500;
+                transition: 0.3s;
+            }
+            .greenshop:hover {
+                color: white;
+            }
+            .span-brdr {
+                padding: 7px;
+                color:rgb(80, 180, 146);
+                background-color: white;
+                border-radius: 5px;
+            }
+            .btn-a1 {
+                color: white;
+                text-decoration: none;
+                transition: 0.3s;
+            }
+            .btn-a1:hover {
+                color: white;
+                text-decoration: none;
+            }
+
+            .header4 {
+                background-color: rgb(241, 241, 241);
+                height: 100vh;
+            }
+            .position-div {
+                padding-top: 9rem;
+            }
+            .img-3 {
+                width: 100%;
+                border-radius: 5px;
+            }
+            .bg-white {
+                background-color: white;
+                left: 14px;
+                width: 170px;
+                height: 50px;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+            }
+            .a-decor {
+                text-align: right;
+                padding-left: 3rem;
+                text-decoration: none;
+                color: rgb(52, 137, 109);
+                font-weight: 500;
+                transition: 0.3s;
+            }
+            .a-decor:hover {
+                color: rgb(30, 88, 70);
+            }
+            .span1 {
+                position: absolute;
+                left:10px;
+                right: 0;
+                top:30%;
+                bottom: 0;
+                font-weight: 500;
+            }
+            .span2 {
+                text-align: right;
+                position: absolute;
+                right: 10px;
+                left: 0;
+                top:30%;
+                bottom: 0;
+            }
+
+            @media (max-width:576px) {
+          .btn-1 {
+            display: none;
+          }
+          .txt-btn {
+            color: rgb(80, 180, 146);
+            background-color: white;
+            font-size: 12px;
+            margin-left: 15px;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+            letter-spacing: 0.5px;
+            border: 1px solid rgb(209, 209, 209);
+        }
+        .input-group {
+          width: 80%;
+          margin-bottom: 200px;
+          margin-left: 70px;
+        }
+        .shopping {
+          margin-right: 20px;
+        }
+        .header {
+          width: 115%;
+        }
+        .h1-1 {
+          font-size: 20px;
+        }
+        .p-1 {
+          font-size: 12px;
+        }
+        .fa-solid {
+          display: none;
+        }
+        .sale {
+          display: none;
+        }
+        }
+        @media (min-width:576px) and (max-width:768px) {
+          
+          .txt-btn {
+            color: rgb(80, 180, 146);
+            background-color: white;
+            font-size: 12px;
+            margin-left: 15px;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+            letter-spacing: 0.5px;
+            border: 1px solid rgb(209, 209, 209);
+        }
+        .input-group {
+          width: 80%;
+          margin-bottom: 200px;
+          margin-left: 70px;
+        }
+        .shopping {
+          margin-right: 20px;
+        }
+        .header {
+          width: 115%;
+        }
+        .h1-1 {
+          font-size: 24px;
+        }
+        .p-1 {
+          font-size: 14px;
+        }
+        .fa-solid {
+          display: none;
+        }
+        .sale {
+          display: none;
+        }
+        }
+        @media (min-width:768px) and (max-width:992px) {
+          .txt-btn {
+            color: rgb(80, 180, 146);
+            background-color: white;
+            font-size: 12px;
+            margin-left: 15px;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+            letter-spacing: 0.5px;
+            border: 1px solid rgb(209, 209, 209);
+        }
+        .input-group {
+          width: 80%;
+          margin-bottom: 200px;
+          margin-left: 70px;
+        }
+        .shopping {
+          margin-right: 20px;
+        }
+        .header {
+          width: 100%;
+        }
+        .h1-1 {
+          font-size: 25px;
+        }
+        .p-1 {
+          font-size: 15px;
+        }
+        .fa-solid {
+          display: none;
+        }
+        .sale {
+          display: none;
+        }
+        }
+        @media (min-width:992px) and (max-width:1200px) {
+          .txt-btn {
+            color: rgb(80, 180, 146);
+            background-color: white;
+            font-size: 12px;
+            margin-left: 125px;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            letter-spacing: 0.5px;
+            border: 1px solid rgb(209, 209, 209);
+        }
+        .input-group {
+          width: 80%;
+          margin-bottom: 200px;
+          margin-left: 70px;
+        }
+        .shopping {
+          margin-right: 20px;
+        }
+        .header {
+          width: 100%;
+        }
+        .h1-1 {
+          font-size: 36px;
+        }
+        .p-1 {
+          font-size: 18px;
+        }
+        .fa-solid {
+          display: none;
+        }
+        .sale {
+          display: none;
+        }
+        .btn-primary {
+          margin-right: 30px;
+        }
+        }
+        </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-light navbar-white position-fixed w-100">
+        <div class="container-fluid mx-4 pb-2">
+          <a class="navbar-brand nav-link a-9" href="MainMenu.html">
+            <img src="/images/PickBazar.webp" class="img1">
+          </a>
+          <ul class="navbar-nav mt-2">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle txt-btn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-apple-whole icon1 pe-2"></i>
+              <span>Grocery</span>
+            </a>
+            <ul class="dropdown-menu ul-menu">
+              <li><a class="dropdown-item li-clr" href="#">
+                <i class="fa-solid fa-apple-whole icon1 pe-2"></i>
+                Grocery</a></li>
+              <li><a class="dropdown-item li-clr" href="#">
+                <i class="fa-sharp fa-solid fa-bread-slice icon1 pe-2"></i>
+                Bakery</a></li>
+              <li><a class="dropdown-item li-clr" href="#">
+                <i class="fa-solid fa-wand-magic icon1 pe-2"></i>
+                Makeup</a></li>
+              <li><a class="dropdown-item li-clr" href="#">
+                <i class="fa-solid fa-bag-shopping icon1 pe-2"></i>
+                Bags</a></li>
+              <li><a class="dropdown-item li-clr" href="#">
+                <i class="fa-solid fa-shirt icon1 pe-2"></i>
+                Clothing</a></li>
+              <li><a class="dropdown-item li-clr" href="#">
+                <i class="fa-solid fa-couch icon1 pe-2"></i>
+                Furniture</a></li>
+              <li><a class="dropdown-item li-clr" href="#">
+                <i class="fa-solid fa-apple-whole icon1 pe-2"></i>
+                Daily Needs</a></li>
+              <li><a class="dropdown-item li-clr" href="#">
+                <i class="fa-solid fa-book icon1 pe-2"></i>
+                Books</a></li>
+            </ul>
+          </li>
+          </ul>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item me-3">
+                <a class="nav-link" href="Shops.html">Shops</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link active" href="Offers.html">Offers</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link" href="FAQ.html">FAQ</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link" href="Contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <button type="button" class="btn-1 ms-3 me-3"><a href="https://pickbazar-react-admin.vercel.app/register" class="btn-a1">Become a Seller</a></button>
+          <button type="button" class="btn btn-primary bg-green" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Join
+          </button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="d-flex justify-content-center pb-4 mt-2">
+                    <img src="/images/PickBazar.webp" class="img2">
+                  </div>
+                    <p class="text-center fs-6">Login with your email & password</p>
+                  <div class="modal-body px-2 mb-3">
+                    <div class="mb-3">
+                        <label class="d-block mb-2 ms-3">Email</label>
+                        <input class="input ms-3" type="email" placeholder="customer@demo.com">
+                    </div>
+                    <div>
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <label class="d-block mb-2 ms-3">Password</label>
+                            <a class="forgot-a" href="#">Forgot password?</a>
+                        </div>
+                        <input type="email" class="input position-relative ms-3" placeholder="Enter Your Password">
+                        <div class="position-absolute text-position">
+                            <i class="fa-regular fa-eye"></i>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="px-2 mb-2">
+                    <button type="button" class="btn-2 ms-3 me-3 bg-green mb-3">Login</button>
+                  </div>
+                    <div class="px-2 pb-5">
+                        <hr class="line1 position-relative ms-3"></hr>
+                        <span class="position-absolute span-or">Or</span>
+                    </div>
+                    <div class="px-2 mb-2">
+                        <button type="button" class="btn-3 ms-3 me-3 mb-3"><i class="fa-solid fa-g me-2"></i>Login with Google</button>
+                    </div>
+                    <div class="px-2 mb-2">
+                        <button type="button" class="btn-4 ms-3 me-3 mb-3"><i class="fa-solid fa-mobile me-2"></i>Login with Mobile Phone</button>
+                        <hr class="line1 position-relative ms-3"></hr>
+                    </div>
+                    <div class="px-2 mb-3">
+                    <p class="text-center">Don't have any account? <a href="#" class="text-a">Register</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </nav>
+      <div class="shopping">
+        <a href="#" class="greenshop">
+            <i class="fa-brands fa-shopify me-2"></i>
+            <span>0 Item</span>
+            <span class="span-brdr">$0.00</span>
+        </a>
+      </div>
+      <header class="header4">
+        <div class="container">
+            <div class="row position-div">
+                <div class="col-md-2 mt-2 mb-2">
+                        <img src="/images/2x2x-thumbnail.webp" class="img-3">
+                        <div class="bg-white position-relative">
+                            <span class="span1">EID2</span>
+                            <span class="span2"><a href="#" class="a-decor">Copy</a></span>
+                        </div>
+                </div>
+                <div class="col-md-2 mt-2 mb-2">
+                        <img src="/images/8x2x-thumbnail.webp" class="img-3">
+                        <div class="bg-white position-relative">
+                            <span class="span1">FOO</span>
+                            <span class="span2"><a href="#" class="a-decor">Copy</a></span>
+                        </div>
+                </div>
+                <div class="col-md-2 mt-2 mb-2">
+                    <img src="/images/12x2x-thumbnail.webp" class="img-3">
+                    <div class="bg-white position-relative">
+                        <span class="span1">EID12</span>
+                        <span class="span2"><a href="#" class="a-decor">Copy</a></span>
+                    </div>
+                </div>
+                <div class="col-md-2 mt-2 mb-2">
+                    <img src="/images/15x2x-thumbnail.webp" class="img-3">
+                    <div class="bg-white position-relative">
+                        <span class="span1">HELLO15</span>
+                        <span class="span2"><a href="#" class="a-decor">Copy</a></span>
+                    </div>
+                </div>
+                <div class="col-md-2 mt-2 mb-2">
+                    <img src="/images/18x2x-thumbnail.webp" class="img-3">
+                    <div class="bg-white position-relative">
+                        <span class="span1">BAZAR18</span>
+                        <span class="span2"><a href="#" class="a-decor">Copy</a></span>
+                    </div>
+                </div>
+                <div class="col-md-2 mt-2 mb-2">
+                    <img src="/images/20x2x-thumbnail.webp" class="img-3">
+                    <div class="bg-white position-relative">
+                        <span class="span1">BAZAR20</span>
+                        <span class="span2"><a href="#" class="a-decor">Copy</a></span>
+                    </div>
+                </div>
+                <div class="col-md-2 mt-4">
+                    <img src="/images/10x2x-thumbnail.webp" class="img-3">
+                    <div class="bg-white position-relative">
+                        <span class="span1">BAZAR10</span>
+                        <span class="span2"><a href="#" class="a-decor">Copy</a></span>
+                    </div>
+                </div>
+                <div class="col-md-2 mt-4">
+                    <img src="/images/6x2x-thumbnail.webp" class="img-3">
+                    <div class="bg-white position-relative">
+                        <span class="span1">OFF6</span>
+                        <span class="span2"><a href="#" class="a-decor">Copy</a></span>
+                    </div>
+                </div>
+                <div class="col-md-2 mt-4">
+                    <img src="/images/5x2x-thumbnail.webp" class="img-3">
+                    <div class="bg-white position-relative">
+                        <span class="span1">5OFF</span>
+                        <span class="span2"><a href="#" class="a-decor">Copy</a></span>
+                    </div>
+                </div>
+                <div class="col-md-2 mt-4">
+                    <img src="/images/4x2x-thumbnail.webp" class="img-3">
+                    <div class="bg-white position-relative">
+                        <span class="span1">4OFF</span>
+                        <span class="span2"><a href="#" class="a-decor">Copy</a></span>
+                    </div>
+                </div>
+        </div>
+      </header>
+</body>
+</html>
